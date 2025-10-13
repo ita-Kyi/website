@@ -23,11 +23,18 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
+        $pronouns = ['he/him', 'she/her', 'they/them', 'other'];
+
         return [
-            'name' => fake()->name(),
+            'firstname' => fake()->firstName(),
+            'lastname' => fake()->lastName(),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
+            'bio' => fake()->sentence(10),
+            'pfp' => fake()->imageUrl(400, 400, 'people'),
+            'pronounce' => fake()->randomElement($pronouns),
+            'relationship_status' => fake()->boolean(30), // 30% chance of being in a relationship
             'remember_token' => Str::random(10),
         ];
     }

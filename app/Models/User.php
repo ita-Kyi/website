@@ -18,9 +18,14 @@ class User extends Authenticatable
      * @var list<string>
      */
     protected $fillable = [
-        'name',
+        'firstname',
+        'lastname',
         'email',
         'password',
+        'bio',
+        'pfp',
+        'pronounce',
+        'relationship_status',
     ];
 
     /**
@@ -43,6 +48,25 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'relationship_status' => 'boolean',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
         ];
+    }
+
+    /**
+     * Get the user's full name.
+     */
+    public function getFullNameAttribute(): string
+    {
+        return "{$this->firstname} {$this->lastname}";
+    }
+
+    /**
+     * Check if user is in a relationship.
+     */
+    public function isInRelationship(): bool
+    {
+        return $this->relationship_status;
     }
 }
