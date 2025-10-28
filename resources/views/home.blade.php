@@ -10,7 +10,7 @@
                 <h1 class="hero-title">Find Your Perfect Match</h1>
                 <p class="hero-subtitle">Connect with like-minded people and discover meaningful relationships with DateMaker</p>
                 <div class="hero-buttons">
-                    <a href="{{ route('register') }}" class="btn btn-primary">Get Started</a>
+                    <a href="{{ route('features') }}" class="btn btn-primary">Explore Features</a>
                     <a href="{{ route('features') }}" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
@@ -127,8 +127,8 @@
                     <h2>Ready to Find Love?</h2>
                     <p>Join millions of people who have found their perfect match on DateMaker</p>
                     <div class="cta-buttons">
-                        <a href="{{ route('register') }}" class="btn btn-primary btn-large">Start Your Journey</a>
-                        <a href="{{ route('login') }}" class="btn btn-outline btn-large">Sign In</a>
+                        <a href="{{ route('features') }}" class="btn btn-primary btn-large">Explore Features</a>
+                        <a href="{{ route('about') }}" class="btn btn-outline btn-large">Learn More</a>
                     </div>
                 </div>
             </div>

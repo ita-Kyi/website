@@ -29,13 +29,14 @@
                     <a href="{{ route('pricing') }}" class="nav-link active">Pricing</a>
                 </li>
             </ul>
-            <div class="nav-right">
-                <button class="download-btn" id="download-btn">Download</button>
-                <div class="profile-circle" id="profile-circle" title="User Profile">
-                    <div class="profile-icon">&#128100;</div>
-                    <div class="pulse-wave"></div>
-                    <div class="pulse-wave"></div>
-                    <div class="pulse-wave"></div>
+                        <div class="nav-right">
+                <button class="download-btn" id="download-btn">
+                    Download
+                </button>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
             </div>
         </div>
@@ -151,8 +152,8 @@
                     <h2>Ready to Find Your Perfect Match?</h2>
                     <p>Join thousands of happy couples who found love on DateMaker</p>
                     <div class="cta-buttons">
-                        <a href="{{ route('register') }}" class="btn btn-primary btn-large">Start Your Journey</a>
-                        <a href="{{ route('login') }}" class="btn btn-outline btn-large">Sign In</a>
+                        <a href="{{ route('features') }}" class="btn btn-primary btn-large">Explore Features</a>
+                        <a href="{{ route('about') }}" class="btn btn-outline btn-large">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -207,6 +208,6 @@
         </div>
     </footer>
 
-    @vite(['resources/js/mock-api-client.js', 'resources/js/auth.js', 'resources/js/api-client.js'])
+    @vite(['resources/js/mock-api-client.js', 'resources/js/api-client.js'])
 </body>
 </html>

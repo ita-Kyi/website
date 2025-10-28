@@ -30,13 +30,14 @@
                     <a href="{{ route('pricing') }}" class="nav-link">Pricing</a>
                 </li>
             </ul>
-            <div class="nav-right">
-                <button class="download-btn" id="download-btn">Download</button>
-                <div class="profile-circle" id="profile-circle" title="User Profile">
-                    <div class="profile-icon">&#128100;</div>
-                    <div class="pulse-wave"></div>
-                    <div class="pulse-wave"></div>
-                    <div class="pulse-wave"></div>
+                        <div class="nav-right">
+                <button class="download-btn" id="download-btn">
+                    Download
+                </button>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
             </div>
         </div>
@@ -196,6 +197,6 @@
         </div>
     </footer>
 
-    @vite(['resources/js/mock-api-client.js', 'resources/js/auth.js', 'resources/js/api-client.js'])
+    @vite(['resources/js/mock-api-client.js', 'resources/js/api-client.js'])
 </body>
 </html>

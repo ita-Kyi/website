@@ -21,8 +21,8 @@
                 <li><a href="{{ route('pricing') }}">Pricing</a></li>
             </ul>
             <div class="nav-buttons">
-                <a href="{{ route('login') }}" class="btn-secondary">Log In</a>
-                <a href="{{ route('register') }}" class="btn-primary">Sign Up</a>
+                <a href="{{ route('home') }}" class="btn-secondary">Go Home</a>
+                <a href="{{ route('features') }}" class="btn-primary">Explore Features</a>
             </div>
         </div>
     </nav>

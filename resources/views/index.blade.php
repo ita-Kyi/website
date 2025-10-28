@@ -78,12 +78,6 @@
                 <button class="download-btn" id="download-btn">
                     Download
                 </button>
-                <div class="profile-circle" id="profile-circle" title="User Profile">
-                    <div class="profile-icon">&#128100;</div>
-                    <div class="pulse-wave"></div>
-                    <div class="pulse-wave"></div>
-                    <div class="pulse-wave"></div>
-                </div>
                 <div class="nav-toggle" id="mobile-menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -100,8 +94,8 @@
                 <h1 class="hero-title">Find Your Perfect Match</h1>
                 <p class="hero-subtitle">Connect with like-minded people and discover meaningful relationships with DateMaker</p>
                 <div class="hero-buttons">
-                    <a href="{{ route('register') }}" class="btn btn-primary">Get Started</a>
-                    <a href="{{ route('features') }}" class="btn btn-secondary">Learn More</a>
+                    <a href="{{ route('features') }}" class="btn btn-primary">Explore Features</a>
+                    <a href="{{ route('about') }}" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -217,8 +211,8 @@
                     <h2>Ready to Find Love?</h2>
                     <p>Join millions of people who have found their perfect match on DateMaker</p>
                     <div class="cta-buttons">
-                        <a href="{{ route('register') }}" class="btn btn-primary btn-large">Start Your Journey</a>
-                        <a href="{{ route('login') }}" class="btn btn-outline btn-large">Sign In</a>
+                        <a href="{{ route('features') }}" class="btn btn-primary btn-large">Explore Features</a>
+                        <a href="{{ route('about') }}" class="btn btn-outline btn-large">Learn About Us</a>
                     </div>
                 </div>
             </div>
@@ -273,6 +267,6 @@
         </div>
     </footer>
 
-    @vite(['resources/js/mock-api-client.js', 'resources/js/auth.js', 'resources/js/api-client.js'])
+    @vite(['resources/js/mock-api-client.js', 'resources/js/api-client.js'])
 </body>
 </html>

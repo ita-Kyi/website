@@ -78,12 +78,6 @@
                 <button class="download-btn" id="download-btn">
                     Download
                 </button>
-                <div class="profile-circle" id="profile-circle" title="User Profile">
-                    <div class="profile-icon">&#128100;</div>
-                    <div class="pulse-wave"></div>
-                    <div class="pulse-wave"></div>
-                    <div class="pulse-wave"></div>
-                </div>
                 <div class="nav-toggle" id="mobile-menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -263,8 +257,8 @@
                     <h2>Experience All These Features</h2>
                     <p>Join DateMaker today and discover the future of online dating</p>
                     <div class="cta-buttons">
-                        <a href="{{ route('register') }}" class="btn btn-primary btn-large">Get Started Free</a>
-                        <a href="{{ route('login') }}" class="btn btn-outline btn-large">Sign In</a>
+                        <a href="{{ route('pricing') }}" class="btn btn-primary btn-large">View Pricing</a>
+                        <a href="{{ route('about') }}" class="btn btn-outline btn-large">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -319,6 +313,6 @@
         </div>
     </footer>
 
-    @vite(['resources/js/mock-api-client.js', 'resources/js/auth.js', 'resources/js/api-client.js'])
+    @vite(['resources/js/mock-api-client.js', 'resources/js/api-client.js'])
 </body>
 </html>
