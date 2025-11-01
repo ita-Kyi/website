@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ - DateMaker</title>
     @vite(['resources/css/datemaker.css'])
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -70,7 +74,7 @@
                 <div class="category-tabs">
                     <button class="tab-btn active" data-category="general">General</button>
                     <button class="tab-btn" data-category="account">Account</button>
-                    <button class="tab-btn" data-category="matching">Matching</button>
+                    <button class="tab-btn" data-category="matching">Features</button>
                     <button class="tab-btn" data-category="safety">Safety</button>
                     <button class="tab-btn" data-category="billing">Billing</button>
                 </div>
@@ -88,7 +92,7 @@
                             <span class="faq-toggle">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>DateMaker is a premium dating platform that uses advanced AI matching algorithms to help you find meaningful connections. We focus on compatibility, shared interests, and long-term relationship potential rather than just superficial matches.</p>
+                            <p>DateMaker is a relationship app for couples. It helps you plan dates together, discover local spots and events, celebrate milestones with badges, and store your favorite memories in a private shared space. It's not a dating app—it's for couples who are already together and want to strengthen their relationship.</p>
                         </div>
                     </div>
 
@@ -98,7 +102,7 @@
                             <span class="faq-toggle">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>After creating your profile, our smart matching algorithm analyzes your preferences, interests, and behavior to suggest compatible matches. You can browse profiles, send messages, and even video chat with potential matches before meeting in person.</p>
+                            <p>After signing up as a couple, you can plan dates collaboratively, vote on activity suggestions, sync your calendars, and discover date spots near you. DateMaker uses AI to recommend activities based on your interests, weather, and location. You can also track milestones, earn badges, and save photos in your private memory gallery.</p>
                         </div>
                     </div>
 
@@ -108,17 +112,17 @@
                             <span class="faq-toggle">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>DateMaker offers both free and premium features. Free users can create profiles, browse matches, and send limited messages. Premium members get unlimited messaging, advanced filters, video calling, and priority support.</p>
+                            <p>DateMaker offers both free and premium plans. Free users can create dates, use the Around Me feature, and earn basic badges. Premium members unlock unlimited date planning, advanced location filters, priority event access, and exclusive milestone badges.</p>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>What makes DateMaker different from other dating apps?</h3>
+                            <h3>What makes DateMaker different from other apps?</h3>
                             <span class="faq-toggle">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>We focus on quality matches over quantity, use advanced AI for compatibility assessment, provide video chat features, maintain strict safety standards, and offer personalized dating coaching to help you succeed.</p>
+                            <p>DateMaker is built specifically for couples, not singles. We focus on strengthening existing relationships through shared experiences, collaborative planning, and celebrating your journey together. No swiping, no awkward introductions—just tools to help you make every date special.</p>
                         </div>
                     </div>
                 </div>
@@ -131,7 +135,7 @@
                             <span class="faq-toggle">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>Simply click "Get Started" on our homepage, enter your email and create a password. You'll then complete your profile with photos, interests, and preferences. The whole process takes about 10 minutes.</p>
+                            <p>Download the DateMaker app and sign up with your email. You'll create a couple's account together with your partner by sending them an invite link. Once connected, you can start planning dates, tracking milestones, and exploring features together.</p>
                         </div>
                     </div>
 
@@ -141,7 +145,7 @@
                             <span class="faq-toggle">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>Yes, you can delete your account at any time from your settings page. This will permanently remove your profile, matches, and messages. If you have a subscription, remember to cancel it first.</p>
+                            <p>Yes, you can delete your account at any time from settings. This will permanently remove your shared dates, memories, and milestones. If you have a premium subscription, remember to cancel it first to avoid future charges.</p>
                         </div>
                     </div>
                 </div>
@@ -192,7 +196,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Singleton. All rights reserved.</p>
+                <p>&copy; 2026 Singleton. All rights reserved.</p>
             </div>
         </div>
     </footer>

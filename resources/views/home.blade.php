@@ -1,17 +1,17 @@
 @extends('layouts.app')
 
-@section('title', 'DateMaker - Find Your Perfect Match')
+@section('title', 'DateMaker - The Relationship App for Couples')
 
 @section('content')
     <!-- Hero Section -->
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1 class="hero-title">Find Your Perfect Match</h1>
-                <p class="hero-subtitle">Connect with like-minded people and discover meaningful relationships with DateMaker</p>
+                <h1 class="hero-title">Create, Plan, and Celebrate Your Love Story</h1>
+                <p class="hero-subtitle">DateMaker is the app for couples who want to make every date count. Plan together, discover new experiences, and celebrate your relationship milestones—all in one private, ad-free space.</p>
                 <div class="hero-buttons">
-                    <a href="{{ route('features') }}" class="btn btn-primary">Explore Features</a>
-                    <a href="{{ route('features') }}" class="btn btn-secondary">Learn More</a>
+                    <a href="{{ route('features') }}" class="btn btn-primary">See Features</a>
+                    <a href="{{ route('about') }}" class="btn btn-secondary">Meet the Team</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -29,20 +29,20 @@
             <div class="container">
                 <div class="stats-grid">
                     <div class="stat-item">
-                        <div class="stat-number">10M+</div>
-                        <div class="stat-label">Happy Couples</div>
+                        <div class="stat-number">100K+</div>
+                        <div class="stat-label">Dates Planned</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">50M+</div>
-                        <div class="stat-label">Active Users</div>
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Memories Saved</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">200+</div>
-                        <div class="stat-label">Countries</div>
+                        <div class="stat-number">5K+</div>
+                        <div class="stat-label">Milestones Celebrated</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">99.9%</div>
-                        <div class="stat-label">Success Rate</div>
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Ads or Data Sold</div>
                     </div>
                 </div>
             </div>
@@ -51,22 +51,22 @@
         <!-- Features Preview -->
         <section class="features-preview">
             <div class="container">
-                <h2>Why Choose DateMaker?</h2>
+                <h2>Why Couples Love DateMaker</h2>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">&#127919;</div>
-                        <h3>Smart Matching</h3>
-                        <p>Advanced AI algorithm finds your perfect match based on compatibility and shared interests.</p>
+                        <div class="feature-icon">🧠</div>
+                        <h3>Plan Dates Together</h3>
+                        <p>Collaborate on ideas, vote, and schedule activities you both love.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">&#128274;</div>
-                        <h3>Safe & Secure</h3>
-                        <p>Your privacy and security are our top priority with end-to-end encryption.</p>
+                        <div class="feature-icon">🔒</div>
+                        <h3>Private & Secure</h3>
+                        <p>All your memories, chats, and plans are encrypted and for your eyes only.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">&#128172;</div>
-                        <h3>Video Chat</h3>
-                        <p>Connect face-to-face with built-in video calling before meeting in person.</p>
+                        <div class="feature-icon">🎉</div>
+                        <h3>Celebrate Milestones</h3>
+                        <p>Earn badges and keep a timeline of your relationship’s special moments.</p>
                     </div>
                 </div>
                 <div class="text-center">
@@ -78,41 +78,41 @@
         <!-- Testimonials -->
         <section class="testimonials">
             <div class="container">
-                <h2>Success Stories</h2>
+                <h2>What Couples Are Saying</h2>
                 <div class="testimonials-grid">
                     <div class="testimonial-card">
                         <div class="testimonial-content">
-                            <p>"We met on DateMaker two years ago and got married last month! The matching algorithm is incredible."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">&#128107;&#8205;&#10084;&#65039;&#8205;&#128104;</div>
-                            <div class="author-info">
-                                <h4>Sarah & Mike</h4>
-                                <span>Married 2023</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <p>"I was skeptical about dating apps, but DateMaker changed my mind. Found my soulmate here!"</p>
+                            <p>"We used to argue about what to do on date night. Now, DateMaker helps us plan together and keeps things fun!"</p>
                         </div>
                         <div class="testimonial-author">
                             <div class="author-avatar">&#128145;</div>
                             <div class="author-info">
-                                <h4>Emma & David</h4>
-                                <span>Together 3 years</span>
+                                <h4>Jess & Taylor</h4>
+                                <span>Dating 2 years</span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-card">
                         <div class="testimonial-content">
-                            <p>"The video chat feature helped us connect on a deeper level before our first date. Highly recommend!"</p>
+                            <p>"We love looking back at our milestones and photos. The app makes our memories feel special."</p>
                         </div>
                         <div class="testimonial-author">
-                            <div class="author-avatar">&#128149;</div>
+                            <div class="author-avatar">&#128107;&#8205;&#10084;&#65039;&#8205;&#128104;</div>
                             <div class="author-info">
-                                <h4>Alex & Jordan</h4>
+                                <h4>Sam & Lee</h4>
                                 <span>Engaged 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Finally, an app that’s just for us as a couple. No ads, no distractions—just our story."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">&#10084;&#65039;</div>
+                            <div class="author-info">
+                                <h4>Maya & Chris</h4>
+                                <span>Together 4 years</span>
                             </div>
                         </div>
                     </div>
@@ -124,11 +124,11 @@
         <section class="cta-section">
             <div class="container">
                 <div class="cta-content">
-                    <h2>Ready to Find Love?</h2>
-                    <p>Join millions of people who have found their perfect match on DateMaker</p>
+                    <h2>Ready to Make Every Date Count?</h2>
+                    <p>Download DateMaker and start building your love story today.</p>
                     <div class="cta-buttons">
-                        <a href="{{ route('features') }}" class="btn btn-primary btn-large">Explore Features</a>
-                        <a href="{{ route('about') }}" class="btn btn-outline btn-large">Learn More</a>
+                        <a href="{{ route('features') }}" class="btn btn-primary btn-large">See Features</a>
+                        <a href="{{ route('about') }}" class="btn btn-outline btn-large">Meet the Team</a>
                     </div>
                 </div>
             </div>

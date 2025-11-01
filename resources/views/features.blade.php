@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Features - DateMaker</title>
     @vite(['resources/css/datemaker.css'])
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}?v=3">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}?v=3">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -21,10 +23,10 @@
                     <a href="{{ route('features') }}" class="nav-link active">Features</a>
                     <div class="dropdown">
                         <a href="{{ route('features') }}#smart-matching" class="dropdown-item">
-                            <div class="dropdown-icon">🧠</div>
+                            <div class="dropdown-icon">&#129504;</div>
                             <div class="dropdown-content">
                                 <div class="dropdown-title">Smart Matching</div>
-                                <div class="dropdown-desc">AI-powered compatibility algorithm</div>
+                                <div class="dropdown-desc">AI-powered date crafting</div>
                             </div>
                         </a>
                         <a href="{{ route('features') }}#safety-first" class="dropdown-item">
@@ -37,15 +39,15 @@
                         <a href="{{ route('features') }}#video-chat" class="dropdown-item">
                             <div class="dropdown-icon">&#128249;</div>
                             <div class="dropdown-content">
-                                <div class="dropdown-title">Video Chat</div>
-                                <div class="dropdown-desc">Secure video calls & virtual dates</div>
+                                <div class="dropdown-title">Around Me</div>
+                                <div class="dropdown-desc">Discover local date spots & events near you</div>
                             </div>
                         </a>
                         <a href="{{ route('features') }}#personality-insights" class="dropdown-item">
                             <div class="dropdown-icon">&#127917;</div>
                             <div class="dropdown-content">
-                                <div class="dropdown-title">Personality Insights</div>
-                                <div class="dropdown-desc">Deep compatibility analysis</div>
+                                <div class="dropdown-title">Personality badges</div>
+                                <div class="dropdown-desc">Color your relationship with unique badges</div>
                             </div>
                         </a>
                         <a href="{{ route('features') }}#date-planning" class="dropdown-item">
@@ -91,8 +93,8 @@
     <main>
         <section class="page-hero">
             <div class="container">
-                <h1>Powerful Features</h1>
-                <p>Discover what makes DateMaker the best platform for finding meaningful connections</p>
+                <h1>DateMaker: The Relationship App</h1>
+                <p>DateMaker is the app for couples who want to create, plan, and celebrate their unique love story. Discover features that help you connect, grow, and make every date memorable—no swiping, no awkward first messages, just real experiences for real relationships.</p>
             </div>
         </section>
 
@@ -103,14 +105,14 @@
                     <!-- Feature 1 - Smart Matching -->
                     <div class="feature-row" id="smart-matching">
                         <div class="feature-content">
-                            <div class="feature-icon">🧠</div>
-                            <h2>Smart Matching</h2>
-                            <p>Our advanced AI-powered compatibility algorithm analyzes your preferences, interests, and behavior patterns to find the most compatible matches. With over 200 compatibility factors, we ensure quality over quantity.</p>
+                            <div class="feature-icon">&#129504;</div>
+                            <h2>Shared Date Creation</h2>
+                            <p>Plan dates together with your partner using collaborative tools. Suggest, vote, and schedule activities that both of you will love. No more indecision—DateMaker makes planning fun and easy.</p>
                             <ul class="feature-list">
-                                <li>&#129504; AI-powered compatibility</li>
-                                <li>&#128157; Deep personality analysis</li>
-                                <li>&#128205; Location preferences</li>
-                                <li>&#11088; Smart recommendations</li>
+                                <li>🧠 Collaborative date planning</li>
+                                <li>💬 Real-time suggestions and voting</li>
+                                <li>📅 Shared calendar integration</li>
+                                <li>⭐ Personalized recommendations</li>
                             </ul>
                         </div>
                         <div class="feature-image">
@@ -122,13 +124,13 @@
                     <div class="feature-row reverse" id="safety-first">
                         <div class="feature-content">
                             <div class="feature-icon">&#128737;&#65039;</div>
-                            <h2>Safety First</h2>
-                            <p>Your safety is our top priority. We provide advanced verification and protection features with bank-level encryption, photo verification, and comprehensive fraud detection to create a secure environment for genuine connections.</p>
+                            <h2>Privacy & Security</h2>
+                            <p>Your relationship is private. DateMaker uses secure, encrypted storage for your memories, plans, and chats. Only you and your partner can access your shared space—no ads, no data selling, ever.</p>
                             <ul class="feature-list">
-                                <li>&#128737;&#65039; Advanced verification system</li>
-                                <li>&#128248; Real photo verification</li>
-                                <li>&#128683; Anti-fraud protection</li>
-                                <li>&#128272; End-to-end encryption</li>
+                                <li>🔒 End-to-end encrypted messaging</li>
+                                <li>🖼️ Private photo albums</li>
+                                <li>🛡️ No third-party data sharing</li>
+                                <li>🚫 No ads, ever</li>
                             </ul>
                         </div>
                         <div class="feature-image">
@@ -140,13 +142,13 @@
                     <div class="feature-row" id="video-chat">
                         <div class="feature-content">
                             <div class="feature-icon">&#128249;</div>
-                            <h2>Video Chat</h2>
-                            <p>Connect authentically with secure video calls and virtual dates. Our high-quality video chat system lets you get to know your matches better before meeting in person, with fun features to break the ice.</p>
+                            <h2>Discover Together</h2>
+                            <p>Find new places, events, and experiences as a couple. Get suggestions for local restaurants, hidden gems, and fun activities tailored to your shared interests and location.</p>
                             <ul class="feature-list">
-                                <li>&#128249; HD secure video calls</li>
-                                <li>&#127757; Virtual date experiences</li>
-                                <li>&#128173; Ice-breaker games</li>
-                                <li>&#127908; Voice messages</li>
+                                <li>📍 Local date spot discovery</li>
+                                <li>🌦️ Weather-aware suggestions</li>
+                                <li>🎫 Event and activity finder</li>
+                                <li>🗺️ Google Maps integration</li>
                             </ul>
                         </div>
                         <div class="feature-image">
@@ -158,53 +160,53 @@
                     <div class="feature-row reverse" id="personality-insights">
                         <div class="feature-content">
                             <div class="feature-icon">&#127917;</div>
-                            <h2>Personality Insights</h2>
-                            <p>Discover deep compatibility analysis through our advanced personality assessment system. Get detailed insights about yourself and your matches to build more meaningful connections based on psychological compatibility.</p>
+                            <h2>Relationship Milestones</h2>
+                            <p>Celebrate your journey together! Earn badges for anniversaries, firsts, and shared achievements. Look back on your story with a timeline of memories and milestones.</p>
                             <ul class="feature-list">
-                                <li>🎭 Deep personality analysis</li>
-                                <li>💡 Compatibility insights</li>
-                                <li>🧠 Psychological matching</li>
-                                <li>📋 Detailed compatibility reports</li>
+                                <li>� Anniversary and event badges</li>
+                                <li>� Relationship timeline</li>
+                                <li>🏆 Shared achievements</li>
+                                <li>� Private journal for your story</li>
                             </ul>
                         </div>
                         <div class="feature-image">
-                            <div class="feature-graphic">🎭✨</div>
+                            <div class="feature-graphic">&#127917;&#10024;</div>
                         </div>
                     </div>
 
                     <!-- Feature 5 - Date Planning -->
                     <div class="feature-row" id="date-planning">
                         <div class="feature-content">
-                            <div class="feature-icon">📅</div>
-                            <h2>Date Planning</h2>
-                            <p>Take the stress out of planning with our smart suggestion system and event coordination features. Get personalized date ideas, restaurant recommendations, and activity suggestions based on shared interests.</p>
+                            <div class="feature-icon">&#128197;</div>
+                            <h2>Effortless Date Planning</h2>
+                            <p>Let DateMaker suggest, organize, and remind you of upcoming dates. Sync with your calendars, get reminders, and never miss a special moment again.</p>
                             <ul class="feature-list">
                                 <li>📅 Smart date suggestions</li>
-                                <li>🍽️ Restaurant recommendations</li>
-                                <li>🎯 Activity matching</li>
-                                <li>📍 Location coordination</li>
+                                <li>⏰ Reminders and notifications</li>
+                                <li>📆 Calendar sync</li>
+                                <li>�️ Shared planning board</li>
                             </ul>
                         </div>
                         <div class="feature-image">
-                            <div class="feature-graphic">📅💕</div>
+                            <div class="feature-graphic">&#128197;&#128149;</div>
                         </div>
                     </div>
 
                     <!-- Feature 6 - Community Events -->
                     <div class="feature-row reverse" id="community">
                         <div class="feature-content">
-                            <div class="feature-icon">👥</div>
-                            <h2>Community Events</h2>
-                            <p>Join local meetups and group activities to meet like-minded people in a fun, relaxed environment. From wine tastings to hiking groups, find your tribe and potentially your soulmate through shared experiences.</p>
+                            <div class="feature-icon">&#128101;</div>
+                            <h2>Community & Inspiration</h2>
+                            <p>Connect with other couples, share ideas, and get inspired. Join challenges, participate in group events, and be part of a supportive community focused on healthy relationships.</p>
                             <ul class="feature-list">
-                                <li>👥 Local meetup groups</li>
-                                <li>🎉 Social events</li>
-                                <li>🏃‍♀️ Activity groups</li>
-                                <li>🌟 Special interest communities</li>
+                                <li>👥 Couples community</li>
+                                <li>🎉 Group challenges</li>
+                                <li>💡 Inspiration feed</li>
+                                <li>🌟 Relationship resources</li>
                             </ul>
                         </div>
                         <div class="feature-image">
-                            <div class="feature-graphic">👥💖</div>
+                            <div class="feature-graphic">&#128101;&#128150;</div>
                         </div>
                     </div>
                 </div>
@@ -214,37 +216,37 @@
         <!-- Additional Features Grid -->
         <section class="additional-features">
             <div class="container">
-                <h2>More Amazing Features</h2>
+                <h2>More DateMaker Features</h2>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">⚡</div>
+                        <div class="feature-icon">&#9889;</div>
                         <h3>Lightning Fast</h3>
-                        <p>Optimized for speed with instant messaging and quick profile loading.</p>
+                        <p>Instant access to your shared plans, memories, and messages.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">📱</div>
+                        <div class="feature-icon">&#128241;</div>
                         <h3>Mobile First</h3>
-                        <p>Designed for mobile with responsive design and native app features.</p>
+                        <p>Beautiful, responsive design for every device.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🎵</div>
-                        <h3>Music Matching</h3>
-                        <p>Connect through music taste with Spotify integration and concert meetups.</p>
+                        <div class="feature-icon">&#127925;</div>
+                        <h3>Shared Playlists</h3>
+                        <p>Create playlists together and set the mood for every date.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🏃</div>
-                        <h3>Activity Partners</h3>
-                        <p>Find workout buddies, hiking partners, and activity companions.</p>
+                        <div class="feature-icon">&#127939;</div>
+                        <h3>Memory Gallery</h3>
+                        <p>Save photos, notes, and favorite moments in your private gallery.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🎭</div>
+                        <div class="feature-icon">&#127917;</div>
                         <h3>Event Planning</h3>
-                        <p>Plan virtual and in-person dates with our integrated event suggestions.</p>
+                        <p>Plan virtual and in-person dates with ease.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🏆</div>
-                        <h3>Success Coaching</h3>
-                        <p>Get personalized dating advice from relationship experts.</p>
+                        <div class="feature-icon">&#127942;</div>
+                        <h3>Relationship Tips</h3>
+                        <p>Expert advice and tips for couples, right in the app.</p>
                     </div>
                 </div>
             </div>
@@ -254,8 +256,8 @@
         <section class="cta-section">
             <div class="container">
                 <div class="cta-content">
-                    <h2>Experience All These Features</h2>
-                    <p>Join DateMaker today and discover the future of online dating</p>
+                    <h2>Ready to Make Every Date Count?</h2>
+                    <p>Download DateMaker and start building your love story today.</p>
                     <div class="cta-buttons">
                         <a href="{{ route('pricing') }}" class="btn btn-primary btn-large">View Pricing</a>
                         <a href="{{ route('about') }}" class="btn btn-outline btn-large">Learn More</a>
@@ -271,7 +273,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>DateMaker</h3>
-                    <p>Connecting hearts, creating futures.</p>
+                    <p>The Relationship App for Couples</p>
                     <div class="social-links">
                         <a href="#" class="social-link">📘</a>
                         <a href="#" class="social-link">🐦</a>
@@ -308,11 +310,18 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Singleton. All rights reserved.</p>
+                <p>&copy; 2026 DateMaker Team. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     @vite(['resources/js/mock-api-client.js', 'resources/js/api-client.js'])
+    <!--
+        Devs:
+        - Selim (Lead Developer)
+        - Kyi (Frontend & UX)
+        - Singleton (Backend & Infra)
+        - Special thanks to the DateMaker community
+    -->
 </body>
 </html>

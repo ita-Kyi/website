@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - DateMaker</title>
     @vite(['resources/css/datemaker.css'])
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -47,69 +48,58 @@
     <main>
         <section class="page-hero">
             <div class="container">
-                <h1>About DateMaker</h1>
-                <p>Connecting hearts and creating meaningful relationships since 2020</p>
+                <h1>Meet the DateMaker Team</h1>
+                <p>Building the app for couples who want to create, plan, and celebrate their unique love story.</p>
             </div>
         </section>
 
         <!-- Developers Section -->
         <section class="developers-section">
             <div class="container">
-                <h2>Meet Our Developers 💕</h2>
+                <h2>Meet Our Developers &#128149;</h2>
                 <p class="developers-intro">The creative minds behind DateMaker's romantic experience</p>
                 <div class="developers-grid">
                     <div class="developer-card">
                         <div class="developer-image">
                             <div class="image-placeholder">
-                                <div class="heart-corner top-left">💖</div>
-                                <div class="heart-corner top-right">💖</div>
-                                <div class="heart-corner bottom-left">💖</div>
-                                <div class="heart-corner bottom-right">💖</div>
-                                <div class="placeholder-icon">👨‍💻</div>
+                                <div class="heart-corner top-left">&#128150;</div>
+                                <div class="heart-corner top-right">&#128150;</div>
+                                <div class="heart-corner bottom-left">&#128150;</div>
+                                <div class="heart-corner bottom-right">&#128150;</div>
+                                <div class="placeholder-icon"><img src="{{ asset('selim.png') }}" alt="Selim's Image"></div>
                             </div>
                         </div>
                         <div class="developer-info">
                             <h3 class="developer-name">Selim</h3>
-                            <h4 class="developer-title">BACKEND</h4>
+                            <h4 class="developer-title">Lead Developer</h4>
                             <p class="developer-description">
-                                Selim is the mastermind behind DateMaker's seamless user experience and robust backend architecture.
-                                With 8+ years in web development and a passion for creating meaningful connections, he specializes
-                                in React, Node.js, and database optimization. When he's not coding, Selim enjoys romantic comedies
-                                and believes that the best love stories start with great technology.
+                                Selim is the architect behind DateMaker's robust backend and seamless user experience. With a passion for building tools that bring people together, Selim ensures every feature is reliable, secure, and fun to use.
                             </p>
                             <div class="developer-social">
-                                <a href="#" class="social-link" title="Follow Selim on Instagram">&#128247;</a>
-                                <a href="#" class="social-link" title="Check out Selim's GitHub">&#128187;</a>
-                                <a href="#" class="social-link" title="Follow Selim on X">&#128038;</a>
-                                <a href="#" class="social-link" title="Connect with Selim on LinkedIn">&#128188;</a>
+                                <a href="https://www.instagram.com/aze_ezt_ne/" class="social-link" title="Follow Selim on Instagram">&#128247;</a>
+                                <a href="https://github.com/ita-Kyi" class="social-link" title="Check out Selim's GitHub">&#128187;</a>
                             </div>
                         </div>
                     </div>
-
                     <div class="developer-card">
                         <div class="developer-image">
                             <div class="image-placeholder">
-                                <div class="heart-corner top-left">💖</div>
-                                <div class="heart-corner top-right">💖</div>
-                                <div class="heart-corner bottom-left">💖</div>
-                                <div class="heart-corner bottom-right">💖</div>
-                                <div class="placeholder-icon">👨‍💻</div>
+                                <div class="heart-corner top-left">&#128150;</div>
+                                <div class="heart-corner top-right">&#128150;</div>
+                                <div class="heart-corner bottom-left">&#128150;</div>
+                                <div class="heart-corner bottom-right">&#128150;</div>
+                                <div class="placeholder-icon"><img src="{{ asset('ricsi.png') }}" alt="Ricsi's Image"></div>
                             </div>
                         </div>
                         <div class="developer-info">
-                            <h3 class="developer-name">Rics</h3>
-                            <h4 class="developer-title">Frontend Developer & UI/UX Designer</h4>
+                            <h3 class="developer-name">Ricsi</h3>
+                            <h4 class="developer-title">Frontend & UX Designer</h4>
                             <p class="developer-description">
-                                Rics brings DateMaker's romantic vision to life through stunning visual design and intuitive user
-                                interfaces. With expertise in CSS animations, responsive design, and user psychology, he creates
-                                the beautiful pink "lovy duby" theme that makes hearts flutter. Rics believes that love should
-                                be beautiful, and his designs reflect that philosophy in every pixel.
+                                Ricsi brings DateMaker's vision to life with beautiful, intuitive design and a focus on user experience. Every screen is crafted to make couples feel at home and inspired to create new memories.
                             </p>
                             <div class="developer-social">
-                                <a href="#" class="social-link" title="Follow Rics on Instagram">&#128247;</a>
-                                <a href="#" class="social-link" title="Check out Rics's GitHub">&#128187;</a>
-                                <a href="#" class="social-link" title="Follow Rics on X">&#128038;</a>
-                                <a href="#" class="social-link" title="Connect with Rics on LinkedIn">&#128188;</a>
+                                <a href="#" class="social-link" title="Follow Ricsi on Instagram">&#128247;</a>
+                                <a href="#" class="social-link" title="Check out Ricsi's GitHub">&#128187;</a>
                             </div>
                         </div>
                     </div>
@@ -126,27 +116,48 @@
                         <p>Have questions or want to learn more about DateMaker? We'd love to hear from you.</p>
                         <div class="contact-methods">
                             <div class="contact-method">
-                                <span class="contact-icon">📧</span>
+                                <span class="contact-icon">&#128231;</span>
                                 <div>
                                     <h4>Email Us</h4>
                                     <p>hello@datemaker.com</p>
                                 </div>
                             </div>
                             <div class="contact-method">
-                                <span class="contact-icon">📞</span>
+                                <span class="contact-icon">&#128222;</span>
                                 <div>
                                     <h4>Call Us</h4>
                                     <p>1-800-DATEMAKER</p>
                                 </div>
                             </div>
                             <div class="contact-method">
-                                <span class="contact-icon">📍</span>
+                                <span class="contact-icon">&#128205;</span>
                                 <div>
                                     <h4>Visit Us</h4>
                                     <p>123 Love Street<br>San Francisco, CA 94105</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="contact-form">
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us more..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -159,12 +170,12 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>DateMaker</h3>
-                    <p>Connecting hearts, creating futures.</p>
+                    <p>The Relationship App for Couples</p>
                     <div class="social-links">
-                        <a href="#" class="social-link">📘</a>
-                        <a href="#" class="social-link">🐦</a>
-                        <a href="#" class="social-link">📷</a>
-                        <a href="#" class="social-link">💼</a>
+                        <a href="#" class="social-link">&#128214;</a>
+                        <a href="#" class="social-link">&#128038;</a>
+                        <a href="#" class="social-link">&#128247;</a>
+                        <a href="#" class="social-link">&#128188;</a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -196,7 +207,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Singleton. All rights reserved.</p>
+                <p>&copy; 2026 DateMaker Team. All rights reserved.</p>
             </div>
         </div>
     </footer>

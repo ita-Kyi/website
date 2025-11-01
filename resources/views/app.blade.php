@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'DateMaker - Find Your Perfect Match')</title>
+    <title>@yield('title', 'DateMaker - Find Your Perfect Date')</title>
     @vite(['resources/css/datemaker.css'])
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}?v=2">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -21,45 +22,45 @@
                     <a href="{{ route('features') }}" class="nav-link {{ request()->routeIs('features') ? 'active' : '' }}">Features</a>
                     <div class="dropdown">
                         <a href="{{ route('features') }}#smart-matching" class="dropdown-item">
-                            <div class="dropdown-icon">🧠</div>
+                            <div class="dropdown-icon">&#129504;</div>
                             <div class="dropdown-content">
-                                <div class="dropdown-title">Smart Matching</div>
-                                <div class="dropdown-desc">AI-powered compatibility algorithm</div>
+                                <div class="dropdown-title">Shared Date Creation</div>
+                                <div class="dropdown-desc">Plan dates together</div>
                             </div>
                         </a>
                         <a href="{{ route('features') }}#safety-first" class="dropdown-item">
-                            <div class="dropdown-icon">&#128737;</div>
+                            <div class="dropdown-icon">&#128274;</div>
                             <div class="dropdown-content">
-                                <div class="dropdown-title">Safety First</div>
-                                <div class="dropdown-desc">Advanced verification & protection</div>
+                                <div class="dropdown-title">Privacy & Security</div>
+                                <div class="dropdown-desc">Encrypted, private, ad-free</div>
                             </div>
                         </a>
                         <a href="{{ route('features') }}#video-chat" class="dropdown-item">
-                            <div class="dropdown-icon">&#128249;</div>
+                            <div class="dropdown-icon">&#128205;</div>
                             <div class="dropdown-content">
-                                <div class="dropdown-title">Video Chat</div>
-                                <div class="dropdown-desc">Secure video calls & virtual dates</div>
+                                <div class="dropdown-title">Discover Together</div>
+                                <div class="dropdown-desc">Find new places & events</div>
                             </div>
                         </a>
                         <a href="{{ route('features') }}#personality-insights" class="dropdown-item">
-                            <div class="dropdown-icon">&#127917;</div>
+                            <div class="dropdown-icon">&#127881;</div>
                             <div class="dropdown-content">
-                                <div class="dropdown-title">Personality Insights</div>
-                                <div class="dropdown-desc">Deep compatibility analysis</div>
+                                <div class="dropdown-title">Relationship Milestones</div>
+                                <div class="dropdown-desc">Celebrate your journey</div>
                             </div>
                         </a>
                         <a href="{{ route('features') }}#date-planning" class="dropdown-item">
-                            <div class="dropdown-icon">&#128197;</div>
+                            <div class="dropdown-icon">&#9200;</div>
                             <div class="dropdown-content">
-                                <div class="dropdown-title">Date Planning</div>
-                                <div class="dropdown-desc">Smart suggestions & event coordination</div>
+                                <div class="dropdown-title">Effortless Date Planning</div>
+                                <div class="dropdown-desc">Reminders & shared calendar</div>
                             </div>
                         </a>
                         <a href="{{ route('features') }}#community" class="dropdown-item">
                             <div class="dropdown-icon">&#128101;</div>
                             <div class="dropdown-content">
-                                <div class="dropdown-title">Community Events</div>
-                                <div class="dropdown-desc">Local meetups & group activities</div>
+                                <div class="dropdown-title">Community & Inspiration</div>
+                                <div class="dropdown-desc">Connect with other couples</div>
                             </div>
                         </a>
                     </div>
@@ -95,12 +96,12 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>DateMaker</h3>
-                    <p>Connecting hearts, creating futures.</p>
+                    <p>The Relationship App for Couples</p>
                     <div class="social-links">
-                        <a href="#" class="social-link">📘</a>
-                        <a href="#" class="social-link">🐦</a>
-                        <a href="#" class="social-link">📷</a>
-                        <a href="#" class="social-link">💼</a>
+                        <a href="#" class="social-link">&#128214;</a>
+                        <a href="#" class="social-link">&#128038;</a>
+                        <a href="#" class="social-link">&#128247;</a>
+                        <a href="#" class="social-link">&#128188;</a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -132,7 +133,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Singleton. All rights reserved.</p>
+                <p>&copy; 2026 DateMaker Team. All rights reserved.</p>
             </div>
         </div>
     </footer>

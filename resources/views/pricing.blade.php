@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing - DateMaker</title>
     @vite(['resources/css/datemaker.css'])
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 </head>
 <body>
     <nav class="navbar">
@@ -56,14 +60,14 @@
             <div class="container">
                 <div class="pricing-header">
                     <h2>Simple, Transparent Pricing</h2>
-                    <p>Choose the plan that's right for your journey to find love</p>
+                    <p>Choose the plan that's right for your journey to find true love</p>
                 </div>
 
                 <div class="pricing-grid">
                     <!-- Basic Plan -->
                     <div class="pricing-card basic">
                         <div class="pricing-header-card">
-                            <div class="plan-icon">💝</div>
+                            <div class="plan-icon">&#128157;</div>
                             <h3>Basic</h3>
                             <p class="plan-subtitle">Perfect for getting started</p>
                         </div>
@@ -73,12 +77,12 @@
                             <span class="period">/month</span>
                         </div>
                         <ul class="features-list">
-                            <li>✨ Create your profile</li>
-                            <li>💕 Browse potential matches</li>
-                            <li>👋 Send 5 likes per day</li>
-                            <li>💬 Limited messaging (3 conversations)</li>
-                            <li>🔍 Basic search filters</li>
-                            <li>📱 Mobile app access</li>
+                            <li>&#10024; Set up couple account</li>
+                            <li>&#10133; Create dates</li>
+                            <li>&#128172; Built-in chatbox</li>
+                            <li>&#128149; Memory Lane</li>
+                            <li>&#128269; Calendar sync</li>
+                            <li>&#128241; Partner linking</li>
                         </ul>
                         <button class="pricing-btn btn-basic">Get Started Free</button>
                         <p class="plan-note">No credit card required</p>
@@ -86,9 +90,9 @@
 
                     <!-- Premium Plan -->
                     <div class="pricing-card premium popular">
-                        <div class="popular-badge">Most Popular 🌟</div>
+                        <div class="popular-badge">Most Popular &#11088;</div>
                         <div class="pricing-header-card">
-                            <div class="plan-icon">💖</div>
+                            <div class="plan-icon">&#128150;</div>
                             <h3>Premium</h3>
                             <p class="plan-subtitle">For serious daters</p>
                         </div>
@@ -98,15 +102,13 @@
                             <span class="period">/month</span>
                         </div>
                         <ul class="features-list">
-                            <li>✨ Everything in Basic</li>
-                            <li>💫 Unlimited likes & matches</li>
-                            <li>💬 Unlimited messaging</li>
-                            <li>🎭 Advanced personality insights</li>
-                            <li>🔍 Premium search filters</li>
-                            <li>👁️ See who liked you</li>
-                            <li>⚡ Boost your profile visibility</li>
-                            <li>📹 Video chat access</li>
-                            <li>🛡️ Enhanced safety features</li>
+                            <li>&#10024; Everything in Basic</li>
+                            <li>&#128171; Access to premade dates</li>
+                            <li>&#9889; Budget tracker</li>
+                            <li>&#127917; Advanced personality insights</li>
+                            <li>&#128269; Milestone badges and couple stats</li>
+                            <li>&#9889; Shared calendar sync</li>
+                            <li>&#128737; Enhanced safety features</li>
                         </ul>
                         <button class="pricing-btn btn-premium">Choose Premium</button>
                         <p class="plan-note">Cancel anytime</p>
@@ -114,9 +116,9 @@
 
                     <!-- Cupido Plan -->
                     <div class="pricing-card cupido">
-                        <div class="cupido-badge">VIP Experience 👑</div>
+                        <div class="cupido-badge">VIP Experience &#128081;</div>
                         <div class="pricing-header-card">
-                            <div class="plan-icon">💘</div>
+                            <div class="plan-icon">&#128152;</div>
                             <h3>Cupido</h3>
                             <p class="plan-subtitle">The ultimate love experience</p>
                         </div>
@@ -126,17 +128,17 @@
                             <span class="period">/month</span>
                         </div>
                         <ul class="features-list">
-                            <li>💖 Everything in Premium</li>
-                            <li>🏆 Priority matching algorithm</li>
-                            <li>💎 Exclusive Cupido member badge</li>
-                            <li>🎪 Access to exclusive events</li>
-                            <li>👥 Personal matchmaking assistance</li>
-                            <li>📅 Professional date planning</li>
-                            <li>🎁 Monthly surprise gifts</li>
-                            <li>⭐ 24/7 VIP customer support</li>
-                            <li>🌹 Custom profile themes</li>
-                            <li>💌 Love letters feature</li>
-                            <li>🎯 Success coach consultation</li>
+                            <li>&#128150; Everything in Premium</li>
+                            <li>&#127942; AI-powered Date Generator</li>
+                            <li>&#128142; Exclusive Cupido member badge</li>
+                            <li>&#127914; Access to exclusive events</li>
+                            <li>&#128101; "Around me" feature</li>
+                            <li>&#128197; Gift list feature</li>
+                            <li>&#127873; Smart reminders</li>
+                            <li>&#11088; 24/7 VIP customer support</li>
+                            <li>&#127801; Shared Spotify/YouTube playlists for each date</li>
+                            <li>&#128140; Sort dates by preferences</li>
+
                         </ul>
                         <button class="pricing-btn btn-cupido">Go VIP with Cupido</button>
                         <p class="plan-note">Includes personal concierge</p>
@@ -146,18 +148,11 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="cta-section">
+                <section class="cta-section">
             <div class="container">
                 <div class="cta-content">
-                    <h2>Ready to Find Your Perfect Match?</h2>
-                    <p>Join thousands of happy couples who found love on DateMaker</p>
-                    <div class="cta-buttons">
-                        <a href="{{ route('features') }}" class="btn btn-primary btn-large">Explore Features</a>
-                        <a href="{{ route('about') }}" class="btn btn-outline btn-large">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <h2>Ready to Find Your Perfect Date?</h2>
+                    <p>Join DateMaker today and start your journey to meaningful connections</p>
     </main>
 
     <!-- Footer -->
@@ -203,7 +198,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Singleton. All rights reserved.</p>
+                <p>&copy; 2026 Singleton. All rights reserved.</p>
             </div>
         </div>
     </footer>

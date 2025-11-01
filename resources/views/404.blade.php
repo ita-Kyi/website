@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Page Not Found | DateMaker</title>
     @vite(['resources/css/datemaker.css'])
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="{{ route('home') }}">💘 DateMaker</a>
+                <a href="{{ route('home') }}">&#128152; DateMaker</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="{{ route('home') }}">Home</a></li>
@@ -30,7 +31,7 @@
     <!-- 404 Error Section -->
     <section class="error-section">
         <div class="container" style="text-align: center; padding: 100px 20px;">
-            <div style="font-size: 120px; margin-bottom: 20px;">💔</div>
+            <div style="font-size: 120px; margin-bottom: 20px;">&#128148;</div>
             <h1 style="font-size: 72px; color: var(--primary-color); margin-bottom: 20px;">404</h1>
             <h2 style="font-size: 36px; margin-bottom: 20px;">Oops! Page Not Found</h2>
             <p style="font-size: 20px; color: #666; margin-bottom: 40px;">
@@ -38,7 +39,7 @@
             </p>
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                 <a href="{{ route('home') }}" class="btn-primary" style="padding: 15px 40px; font-size: 18px;">
-                    💘 Go Home
+                    &#128152; Go Home
                 </a>
                 <a href="{{ route('features') }}" class="btn-secondary" style="padding: 15px 40px; font-size: 18px;">
                     Explore Features
@@ -56,7 +57,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>DateMaker</h3>
-                    <p>Find your perfect match today!</p>
+                    <p>Find your perfect date today!</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>

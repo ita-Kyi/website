@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DateMaker - Find Your Perfect Match</title>
+    <title>DateMaker - Find Your Perfect Date</title>
     @vite(['resources/css/datemaker.css'])
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+   <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -25,7 +23,7 @@
                     <a href="{{ route('features') }}" class="nav-link">Features</a>
                     <div class="dropdown">
                         <a href="{{ route('features') }}#smart-matching" class="dropdown-item">
-                            <div class="dropdown-icon">🧠</div>
+                            <div class="dropdown-icon">&#129504;</div>
                             <div class="dropdown-content">
                                 <div class="dropdown-title">Smart Matching</div>
                                 <div class="dropdown-desc">AI-powered compatibility algorithm</div>
@@ -95,8 +93,8 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1 class="hero-title">Find Your Perfect Match</h1>
-                <p class="hero-subtitle">Connect with like-minded people and discover meaningful relationships with DateMaker</p>
+                <h1 class="hero-title">Find Your Perfect Date</h1>
+                <p class="hero-subtitle">Plan amazing dates, celebrate milestones, and create lasting memories with your partner</p>
                 <div class="hero-buttons">
                     <a href="{{ route('features') }}" class="btn btn-primary">Explore Features</a>
                     <a href="{{ route('about') }}" class="btn btn-secondary">Learn More</a>
@@ -143,18 +141,18 @@
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon">&#127919;</div>
-                        <h3>Smart Matching</h3>
-                        <p>Advanced AI algorithm finds your perfect match based on compatibility and shared interests.</p>
+                        <h3>AI Date Planning</h3>
+                        <p>Smart suggestions for dates based on your interests, location, and relationship milestones.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">&#128274;</div>
-                        <h3>Safe & Secure</h3>
-                        <p>Your privacy and security are our top priority with end-to-end encryption.</p>
+                        <h3>Private & Secure</h3>
+                        <p>Your memories and plans are private with end-to-end encryption—just for you two.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">&#128172;</div>
-                        <h3>Video Chat</h3>
-                        <p>Connect face-to-face with built-in video calling before meeting in person.</p>
+                        <h3>Around Me</h3>
+                        <p>Discover local date spots, events, and hidden gems perfect for couples.</p>
                     </div>
                 </div>
                 <div class="text-center">
@@ -170,19 +168,19 @@
                 <div class="testimonials-grid">
                     <div class="testimonial-card">
                         <div class="testimonial-content">
-                            <p>"We met on DateMaker two years ago and got married last month! The matching algorithm is incredible."</p>
+                            <p>"DateMaker helps us plan the best dates! We've tried so many new places and activities together."</p>
                         </div>
                         <div class="testimonial-author">
                             <div class="author-avatar">&#128107;&#8205;&#10084;&#65039;&#8205;&#128104;</div>
                             <div class="author-info">
                                 <h4>Sarah & Mike</h4>
-                                <span>Married 2023</span>
+                                <span>Together 2 years</span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-card">
                         <div class="testimonial-content">
-                            <p>"I was skeptical about dating apps, but DateMaker changed my mind. Found my soulmate here!"</p>
+                            <p>"The milestone badges and memory gallery are our favorite features. It's like a digital scrapbook of our love!"</p>
                         </div>
                         <div class="testimonial-author">
                             <div class="author-avatar">&#128145;</div>
@@ -212,8 +210,8 @@
         <section class="cta-section">
             <div class="container">
                 <div class="cta-content">
-                    <h2>Ready to Find Love?</h2>
-                    <p>Join millions of people who have found their perfect match on DateMaker</p>
+                    <h2>Ready to Elevate Your Relationship?</h2>
+                    <p>Join thousands of couples creating amazing memories with DateMaker</p>
                     <div class="cta-buttons">
                         <a href="{{ route('features') }}" class="btn btn-primary btn-large">Explore Features</a>
                         <a href="{{ route('about') }}" class="btn btn-outline btn-large">Learn About Us</a>
@@ -231,10 +229,10 @@
                     <h3>DateMaker</h3>
                     <p>Connecting hearts, creating futures.</p>
                     <div class="social-links">
-                        <a href="#" class="social-link">📘</a>
-                        <a href="#" class="social-link">🐦</a>
-                        <a href="#" class="social-link">📷</a>
-                        <a href="#" class="social-link">💼</a>
+                        <a href="#" class="social-link">&#128214;</a>
+                        <a href="#" class="social-link">&#128038;</a>
+                        <a href="#" class="social-link">&#128247;</a>
+                        <a href="#" class="social-link">&#128188;</a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -266,7 +264,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Singleton. All rights reserved.</p>
+                <p>&copy; 2026 Singleton. All rights reserved.</p>
             </div>
         </div>
     </footer>
