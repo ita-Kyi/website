@@ -239,7 +239,7 @@
                     <h4>Company</h4>
                     <ul>
                         <li><a href="{{ route('about') }}">About Us</a></li>
-                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="{{ route('about') }}#careers">Careers</a></li>
                         <li><a href="#press">Press</a></li>
                         <li><a href="#blog">Blog</a></li>
                     </ul>
@@ -248,9 +248,9 @@
                     <h4>Support</h4>
                     <ul>
                         <li><a href="{{ route('faq') }}">FAQ</a></li>
-                        <li><a href="#help">Help Center</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#safety">Safety</a></li>
+                        <li><a href="{{ route('about') }}#careers">Help Center</a></li>
+                        <li><a href="{{ route('about') }}#careers">Contact</a></li>
+                        <li><a href="{{ route('faq') }}#safety">Safety</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">

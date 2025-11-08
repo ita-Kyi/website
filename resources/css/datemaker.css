@@ -27,6 +27,7 @@
     --shadow-soft: 0 5px 15px var(--shadow-soft);
     --shadow-heart: 0 8px 25px rgba(255, 105, 180, 0.4);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -51,6 +52,7 @@ body {
 main {
     flex: 1;
 }
+
 body::before {
     content: '';
     position: fixed;
@@ -58,9 +60,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-        radial-gradient(circle at 20% 80%, var(--shadow-soft) 2px, transparent 2px),
-        radial-gradient(circle at 80% 20%, var(--shadow-soft) 1px, transparent 1px);
+    background-image: radial-gradient(circle at 20% 80%, var(--shadow-soft) 2px, transparent 2px), radial-gradient(circle at 80% 20%, var(--shadow-soft) 1px, transparent 1px);
     background-size: 100px 100px, 80px 80px;
     animation: floatingHearts 30s infinite linear;
     pointer-events: none;
@@ -70,8 +70,12 @@ body::before {
 }
 
 @keyframes floatingHearts {
-    0% { transform: translateY(0px) rotate(0deg); }
-    100% { transform: translateY(-20px) rotate(360deg); }
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-20px) rotate(360deg);
+    }
 }
 
 .container {
@@ -122,8 +126,13 @@ body::before {
 }
 
 @keyframes heartbeat {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.2); }
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
 }
 
 .nav-menu {
@@ -166,7 +175,9 @@ body::before {
     width: 100%;
 }
 
+
 /* Features Dropdown */
+
 .nav-item {
     position: relative;
 }
@@ -261,7 +272,9 @@ body::before {
     gap: 1rem;
 }
 
+
 /* Download Button */
+
 .download-btn {
     background: var(--love-gradient);
     color: white;
@@ -293,7 +306,9 @@ body::before {
     box-shadow: var(--shadow-romantic);
 }
 
+
 /* Profile Circle */
+
 .profile-circle {
     position: relative;
     width: 50px;
@@ -326,9 +341,17 @@ body::before {
     opacity: 0;
 }
 
-.pulse-wave:nth-child(2) { animation-delay: 0.5s; }
-.pulse-wave:nth-child(3) { animation-delay: 1s; }
-.pulse-wave:nth-child(4) { animation-delay: 1.5s; }
+.pulse-wave:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.pulse-wave:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.pulse-wave:nth-child(4) {
+    animation-delay: 1.5s;
+}
 
 @keyframes pulse {
     0% {
@@ -372,7 +395,9 @@ body::before {
     bottom: -35px;
 }
 
+
 /* Mobile Menu Toggle */
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -433,7 +458,7 @@ main {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 1.5rem;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero-subtitle {
@@ -441,7 +466,7 @@ main {
     color: white;
     margin-bottom: 2.5rem;
     opacity: 0.95;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .hero-buttons {
@@ -589,7 +614,8 @@ main {
 }
 
 @keyframes floatHeart {
-    0%, 100% {
+    0%,
+    100% {
         transform: translateY(0px) rotate(0deg);
         opacity: 0.7;
     }
@@ -716,9 +742,19 @@ main {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-10px); }
-    60% { transform: translateY(-5px); }
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
 }
 
 .feature-card h3 {
@@ -831,7 +867,9 @@ main {
     font-size: 0.9rem;
 }
 
+
 /* ====== CTA SECTION ====== */
+
 .cta-section {
     padding: 6rem 0;
     background: var(--sunset-love);
@@ -852,8 +890,12 @@ main {
 }
 
 @keyframes slideRight {
-    0% { transform: translateX(-100px); }
-    100% { transform: translateX(calc(100vw + 100px)); }
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(calc(100vw + 100px));
+    }
 }
 
 .cta-content h2 {
@@ -861,7 +903,7 @@ main {
     color: white;
     font-family: var(--font-elegant);
     margin-bottom: 1.5rem;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .cta-content p {
@@ -869,7 +911,7 @@ main {
     color: white;
     opacity: 0.95;
     margin-bottom: 3rem;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .cta-buttons {
@@ -883,7 +925,9 @@ main {
     font-size: 1.2rem;
 }
 
+
 /* ====== FAQ SEARCH BAR ====== */
+
 .faq-search {
     padding: 3rem 0;
     background: var(--romantic-glow);
@@ -988,9 +1032,12 @@ main {
     transform: scale(0.95);
 }
 
+
 /* Search Animation Effects */
+
 @keyframes searchPulse {
-    0%, 100% {
+    0%,
+    100% {
         box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.4);
     }
     50% {
@@ -1002,7 +1049,9 @@ main {
     animation: searchPulse 1.5s infinite;
 }
 
+
 /* Search Results Highlighting */
+
 .search-highlight {
     background: var(--soft-pink);
     color: var(--deep-rose);
@@ -1013,7 +1062,8 @@ main {
 }
 
 @keyframes highlightGlow {
-    0%, 100% {
+    0%,
+    100% {
         background: var(--soft-pink);
     }
     50% {
@@ -1022,17 +1072,25 @@ main {
     }
 }
 
+
 /* Search Loading State */
+
 .search-box.loading .search-btn {
     animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
+
 /* No Results State */
+
 .no-results {
     text-align: center;
     padding: 3rem 2rem;
@@ -1049,7 +1107,9 @@ main {
     opacity: 0.5;
 }
 
+
 /* ====== FAQ CATEGORY TABS ====== */
+
 .faq-categories {
     padding: 2rem 0;
     background: linear-gradient(135deg, var(--ivory) 0%, var(--cream) 100%);
@@ -1147,7 +1207,8 @@ main {
 }
 
 @keyframes sparkle {
-    0%, 100% {
+    0%,
+    100% {
         transform: rotate(0deg) scale(1);
         opacity: 0.7;
     }
@@ -1157,7 +1218,9 @@ main {
     }
 }
 
+
 /* Category Icons */
+
 .tab-btn[data-category="general"]::before {
     content: '❓ ';
     font-size: 1.2rem;
@@ -1188,7 +1251,9 @@ main {
     margin-right: 0.5rem;
 }
 
+
 /* Tab Content Styling */
+
 .faq-category {
     display: none;
     animation: fadeInUp 0.5s ease-out;
@@ -1209,7 +1274,9 @@ main {
     }
 }
 
+
 /* Enhanced FAQ Items */
+
 .faq-content {
     padding: 3rem 0;
     background: linear-gradient(135deg, var(--cream) 0%, var(--ivory) 100%);
@@ -1297,32 +1364,32 @@ main {
     }
 }
 
+
 /* Mobile Responsive */
+
 @media (max-width: 768px) {
     .category-tabs {
         gap: 0.5rem;
     }
-    
     .tab-btn {
         padding: 0.8rem 1.5rem;
         font-size: 1rem;
         min-width: 100px;
     }
-    
     .faq-question {
         padding: 1rem 1.5rem;
     }
-    
     .faq-question h3 {
         font-size: 1.1rem;
     }
-    
     .faq-answer {
         padding: 0 1.5rem 1rem;
     }
 }
 
+
 /* ====== SUPPORT SECTION ====== */
+
 .support-section {
     padding: 4rem 0;
     background: var(--sunset-love);
@@ -1367,8 +1434,12 @@ main {
 }
 
 @keyframes rotateGlow {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .support-card h2 {
@@ -1451,7 +1522,9 @@ main {
     animation: heartbeat 1s ease-in-out infinite;
 }
 
+
 /* ====== CONTACT SECTION ====== */
+
 .contact-section {
     padding: 4rem 0;
     background: linear-gradient(135deg, var(--cream) 0%, var(--ivory) 100%);
@@ -1470,6 +1543,13 @@ main {
 }
 
 .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
@@ -1557,8 +1637,13 @@ main {
 }
 
 @keyframes shimmer {
-    0%, 100% { left: -100%; }
-    50% { left: 100%; }
+    0%,
+    100% {
+        left: -100%;
+    }
+    50% {
+        left: 100%;
+    }
 }
 
 .form-group {
@@ -1644,7 +1729,9 @@ main {
     transform: translateY(-50%) scale(0.95);
 }
 
+
 /* Hide password toggles on register page */
+
 body.register-page .password-toggle {
     display: none !important;
 }
@@ -1653,7 +1740,9 @@ body.register-page .password-input-container input {
     padding-right: 1rem !important;
 }
 
+
 /* Login/Register Divider */
+
 .login-divider {
     text-align: center;
     margin: 2rem 0;
@@ -1689,7 +1778,9 @@ body.register-page .password-input-container input {
     opacity: 0.7;
 }
 
+
 /* Checkbox Styling */
+
 .checkbox-label {
     display: flex;
     align-items: flex-start;
@@ -1732,7 +1823,9 @@ body.register-page .password-input-container input {
     display: none;
 }
 
+
 /* Checkbox Row Layout */
+
 .checkbox-row {
     display: flex;
     flex-direction: column;
@@ -1750,7 +1843,9 @@ body.register-page .password-input-container input {
     gap: 0.75rem;
 }
 
+
 /* Forgot Password Link */
+
 .forgot-password {
     color: var(--primary-pink);
     text-decoration: none;
@@ -1766,7 +1861,9 @@ body.register-page .password-input-container input {
     text-decoration: underline;
 }
 
+
 /* CAPTCHA Styling */
+
 .captcha-section {
     margin: 1.5rem 0;
 }
@@ -1841,7 +1938,9 @@ body.register-page .password-input-container input {
     letter-spacing: 0.5px;
 }
 
+
 /* Register & Login Button Centering */
+
 #register-btn,
 #login-btn {
     display: block;
@@ -1852,7 +1951,9 @@ body.register-page .password-input-container input {
     overflow: visible;
 }
 
+
 /* Heart Animation for Create Account & Login Buttons */
+
 #register-btn::before,
 #register-btn::after,
 #login-btn::before,
@@ -1901,7 +2002,9 @@ body.register-page .password-input-container input {
     }
 }
 
+
 /* Profile Circle Click Functionality */
+
 .profile-circle {
     cursor: pointer;
     transition: all 0.3s ease;
@@ -1911,7 +2014,9 @@ body.register-page .password-input-container input {
     transform: scale(1.1);
 }
 
+
 /* Profile Dropdown Menu */
+
 .profile-dropdown {
     position: fixed;
     z-index: 1000;
@@ -2022,25 +2127,27 @@ body.register-page .password-input-container input {
     min-height: 120px;
 }
 
+
 /* Responsive Contact */
+
 @media (max-width: 768px) {
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
     .support-options {
         flex-direction: column;
         align-items: center;
     }
-    
     .support-btn {
         width: 100%;
         max-width: 300px;
     }
 }
 
+
 /* ====== DEVELOPERS SECTION ====== */
+
 .developers-section {
     padding: 4rem 0;
     background: var(--romantic-glow);
@@ -2121,7 +2228,9 @@ body.register-page .password-input-container input {
     border-color: var(--soft-pink);
 }
 
+
 /* Developer Image with Heart Corners */
+
 .developer-image {
     flex-shrink: 0;
     width: 200px;
@@ -2184,7 +2293,9 @@ body.register-page .password-input-container input {
     z-index: 5;
 }
 
+
 /* Developer Info */
+
 .developer-info {
     flex: 1;
 }
@@ -2267,7 +2378,6 @@ body.register-page .password-input-container input {
         gap: 1.2rem;
         margin-top: 1rem;
     }
-    
     .developer-social .social-link {
         width: 45px;
         height: 45px;
@@ -2275,9 +2385,12 @@ body.register-page .password-input-container input {
     }
 }
 
+
 /* Floating Animation */
+
 @keyframes float {
-    0%, 100% {
+    0%,
+    100% {
         transform: translateY(0px);
     }
     50% {
@@ -2285,42 +2398,37 @@ body.register-page .password-input-container input {
     }
 }
 
+
 /* Mobile Responsive for Developers */
+
 @media (max-width: 768px) {
     .developers-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
     .developer-card {
         flex-direction: column;
         text-align: center;
         padding: 2rem;
     }
-    
     .developer-image {
         align-self: center;
         margin-bottom: 1.5rem;
         width: 150px;
     }
-    
     .image-placeholder {
         width: 150px;
         height: 150px;
     }
-    
     .placeholder-icon {
         font-size: 3rem;
     }
-    
     .developer-name {
         font-size: 1.5rem;
     }
-    
     .developer-title {
         font-size: 1.1rem;
     }
-    
     .developer-description {
         text-align: left;
     }
@@ -2330,7 +2438,6 @@ body.register-page .password-input-container input {
     .developers-section h2 {
         font-size: 2.5rem;
     }
-    
     .developers-intro {
         font-size: 1.1rem;
     }
@@ -2424,40 +2531,32 @@ body.register-page .password-input-container input {
     .nav-menu {
         display: none;
     }
-    
     .nav-toggle {
         display: flex;
     }
-    
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
     }
-    
     .hero-title {
         font-size: 2.5rem;
     }
-    
     .hero-buttons {
         justify-content: center;
         flex-wrap: wrap;
     }
-    
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
     .features-grid,
     .testimonials-grid {
         grid-template-columns: 1fr;
     }
-    
     .cta-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -2467,41 +2566,37 @@ body.register-page .password-input-container input {
     .nav-container {
         padding: 1rem;
     }
-    
     .hero {
         padding: 2rem 0;
     }
-    
     .hero-title {
         font-size: 2rem;
     }
-    
     .hero-subtitle {
         font-size: 1.1rem;
     }
-    
     .stats-grid {
         grid-template-columns: 1fr;
     }
-    
     .footer-content {
         grid-template-columns: 1fr;
     }
-    
     .btn {
         padding: 0.8rem 1.5rem;
         font-size: 1rem;
     }
-    
     .btn-large {
         padding: 1rem 2rem;
         font-size: 1.1rem;
     }
 }
 
+
 /* ====== PAGE SPECIFIC STYLES ====== */
 
+
 /* Page Hero (for non-home pages) */
+
 .page-hero {
     padding: 8rem 0 4rem;
     background: var(--sunset-love);
@@ -2509,7 +2604,9 @@ body.register-page .password-input-container input {
     color: white;
 }
 
+
 /* ====== PRICING PAGE STYLES ====== */
+
 .pricing-section {
     padding: 4rem 0;
     background: linear-gradient(135deg, var(--cream) 0%, var(--ivory) 100%);
@@ -2581,8 +2678,11 @@ body.register-page .password-input-container input {
     border-color: var(--soft-pink);
 }
 
+
 /* Popular Badge */
-.popular-badge, .cupido-badge {
+
+.popular-badge,
+.cupido-badge {
     position: absolute;
     top: -10px;
     left: 50%;
@@ -2601,7 +2701,9 @@ body.register-page .password-input-container input {
     background: linear-gradient(135deg, #ffd700 0%, #ffb347 50%, #ff69b4 100%);
 }
 
+
 /* Premium Card Special Styling */
+
 .pricing-card.premium {
     border: 2px solid var(--primary-pink);
     transform: scale(1.05);
@@ -2733,7 +2835,9 @@ body.register-page .password-input-container input {
     font-style: italic;
 }
 
+
 /* Comparison Table */
+
 .comparison-section {
     margin: 4rem 0;
     text-align: center;
@@ -2788,7 +2892,9 @@ body.register-page .password-input-container input {
     color: var(--text-dark);
 }
 
+
 /* Pricing FAQ */
+
 .pricing-faq {
     margin: 4rem 0;
 }
@@ -2835,7 +2941,9 @@ body.register-page .password-input-container input {
     line-height: 1.7;
 }
 
+
 /* Pricing CTA */
+
 .pricing-cta {
     text-align: center;
     padding: 4rem 2rem;
@@ -2862,7 +2970,7 @@ body.register-page .password-input-container input {
     color: white;
     font-family: var(--font-elegant);
     margin-bottom: 1rem;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-cta p {
@@ -2870,7 +2978,7 @@ body.register-page .password-input-container input {
     color: white;
     opacity: 0.95;
     margin-bottom: 2rem;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .cta-buttons {
@@ -2884,16 +2992,18 @@ body.register-page .password-input-container input {
     font-size: 3.5rem;
     font-family: var(--font-elegant);
     margin-bottom: 1rem;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .page-hero p {
     font-size: 1.3rem;
     opacity: 0.95;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+
 /* Features Page Specific */
+
 .features-section {
     padding: 4rem 0;
 }
@@ -2910,14 +3020,15 @@ body.register-page .password-input-container input {
     align-items: center;
     margin-bottom: 6rem;
     padding: 0 2rem;
-    scroll-margin-top: 100px; /* Offset for fixed navbar */
+    scroll-margin-top: 100px;
+    /* Offset for fixed navbar */
 }
 
 .feature-row.reverse {
     direction: rtl;
 }
 
-.feature-row.reverse > * {
+.feature-row.reverse>* {
     direction: ltr;
 }
 
@@ -2987,9 +3098,12 @@ body.register-page .password-input-container input {
     margin-bottom: 3rem;
 }
 
+
 /* ====== LOVE-THEMED ANIMATIONS ====== */
+
 @keyframes loveGlow {
-    0%, 100% {
+    0%,
+    100% {
         box-shadow: 0 0 20px var(--shadow-pink);
     }
     50% {
@@ -2998,7 +3112,8 @@ body.register-page .password-input-container input {
 }
 
 @keyframes romanticFloat {
-    0%, 100% {
+    0%,
+    100% {
         transform: translateY(0px) rotate(0deg);
     }
     33% {
@@ -3009,14 +3124,18 @@ body.register-page .password-input-container input {
     }
 }
 
+
 /* Apply romantic animations to various elements */
+
 .feature-card:hover,
 .testimonial-card:hover,
 .stat-item:hover {
     animation: romanticFloat 2s ease-in-out infinite;
 }
 
+
 /* Special hover effects */
+
 .btn:hover {
     animation: loveGlow 1s ease-in-out infinite;
 }
@@ -3032,7 +3151,9 @@ body.register-page .password-input-container input {
     background: var(--sunset-love);
 }
 
+
 /* Add floating hearts to login/register sections */
+
 .login-section::before,
 .register-section::before {
     content: '';
@@ -3041,10 +3162,7 @@ body.register-page .password-input-container input {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-        radial-gradient(circle at 20% 80%, var(--shadow-soft) 2px, transparent 2px),
-        radial-gradient(circle at 80% 20%, var(--shadow-soft) 1px, transparent 1px),
-        radial-gradient(circle at 40% 40%, var(--shadow-soft) 1px, transparent 1px);
+    background-image: radial-gradient(circle at 20% 80%, var(--shadow-soft) 2px, transparent 2px), radial-gradient(circle at 80% 20%, var(--shadow-soft) 1px, transparent 1px), radial-gradient(circle at 40% 40%, var(--shadow-soft) 1px, transparent 1px);
     background-size: 100px 100px, 80px 80px, 120px 120px;
     animation: floatingHearts 20s infinite linear;
     pointer-events: none;
@@ -3063,11 +3181,7 @@ body.register-page .password-input-container input {
 .auth-card {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 25px;
-    box-shadow: 
-        0 25px 45px rgba(0, 0, 0, 0.2),
-        0 12px 25px rgba(0, 0, 0, 0.15),
-        inset 0 1px 0 rgba(255, 255, 255, 0.4),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2), 0 12px 25px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(30px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     position: relative;
@@ -3079,14 +3193,12 @@ body.register-page .password-input-container input {
 
 .auth-card:hover {
     transform: translateY(-5px);
-    box-shadow: 
-        0 35px 65px rgba(0, 0, 0, 0.25),
-        0 20px 35px rgba(0, 0, 0, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 35px 65px rgba(0, 0, 0, 0.25), 0 20px 35px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 @keyframes cardFloat {
-    0%, 100% {
+    0%,
+    100% {
         transform: translateY(0px);
     }
     50% {
@@ -3095,8 +3207,8 @@ body.register-page .password-input-container input {
 }
 
 
-
 /* Glass card glow effect */
+
 .auth-card::before {
     content: '';
     position: absolute;
@@ -3104,9 +3216,7 @@ body.register-page .password-input-container input {
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
-        linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
-        linear-gradient(-45deg, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, transparent 50%), linear-gradient(-45deg, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
     border-radius: 25px;
     pointer-events: none;
 }
@@ -3144,39 +3254,34 @@ body.register-page .password-input-container input {
 }
 
 
-
-
-
 /* Responsive design for smaller screens */
+
 @media (max-width: 768px) {
     .auth-window {
         grid-template-columns: 1fr;
         grid-template-rows: 100px 1fr 100px;
         max-width: 500px;
     }
-    
     .auth-figure {
         height: 100px;
     }
-    
     .figure-silhouette {
         font-size: 3rem;
     }
-    
     .auth-form-section {
         padding: 2rem 1.5rem;
     }
-    
     .auth-header h1 {
         font-size: 2rem;
     }
-    
     .auth-window::before {
         display: none;
     }
 }
 
+
 /* Legacy support for existing classes */
+
 .login-box,
 .register-box {
     background: transparent;
@@ -3185,7 +3290,9 @@ body.register-page .password-input-container input {
     padding: 0;
 }
 
+
 /* ====== CUSTOM SCROLLBAR ====== */
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -3203,7 +3310,9 @@ body.register-page .password-input-container input {
     background: var(--love-gradient);
 }
 
+
 /* ====== SELECTION STYLING ====== */
+
 ::selection {
     background: var(--soft-pink);
     color: white;
@@ -3213,7 +3322,10 @@ body.register-page .password-input-container input {
     background: var(--soft-pink);
     color: white;
 }
+
+
 /* ====== ERROR MESSAGES ====== */
+
 .error-message {
     color: #dc3545;
     font-size: 14px;
@@ -3223,4 +3335,101 @@ body.register-page .password-input-container input {
 
 .form-group input.error {
     border-color: #dc3545;
+}
+
+
+/* ====== MOBILE RESPONSIVE STYLES ====== */
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-container {
+        padding: 1rem;
+    }
+    .nav-logo a {
+        font-size: 1.5rem;
+    }
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        max-width: 300px;
+        height: calc(100vh - 70px);
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        overflow-y: auto;
+    }
+    .nav-menu.active {
+        right: 0;
+    }
+    .nav-item {
+        width: 100%;
+    }
+    .nav-link {
+        display: block;
+        padding: 1rem;
+        width: 100%;
+    }
+    .dropdown {
+        position: static !important;
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        box-shadow: none;
+        border: none;
+        margin-top: 0.5rem;
+        padding: 0.5rem 0;
+        min-width: 100%;
+    }
+    .hero {
+        padding: 8rem 1rem 4rem;
+        min-height: auto;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    .cta-group {
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    .features-grid,
+    .pricing-grid,
+    .stats-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+    }
+    section {
+        padding: 3rem 0 !important;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .section-title {
+        font-size: 1.75rem;
+    }
+    .nav-logo a {
+        font-size: 1.3rem;
+    }
 }

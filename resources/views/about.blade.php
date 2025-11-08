@@ -14,7 +14,6 @@
             <div class="nav-logo">
                 <a href="{{ route('home') }}">DateMaker</a>
             </div>
-            <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="{{ route('home') }}" class="nav-link">Home</a>
                 </li>
@@ -108,9 +107,9 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="contact-section">
+        <section class="contact-section" id="careers">
             <div class="container">
-                <div class="contact-content">
+                <div class="contact-container">
                     <div class="contact-info">
                         <h2>Get in Touch</h2>
                         <p>Have questions or want to learn more about DateMaker? We'd love to hear from you.</p>
@@ -182,7 +181,7 @@
                     <h4>Company</h4>
                     <ul>
                         <li><a href="{{ route('about') }}">About Us</a></li>
-                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="{{ route('about') }}#careers">Careers</a></li>
                         <li><a href="#press">Press</a></li>
                         <li><a href="#blog">Blog</a></li>
                     </ul>
@@ -191,9 +190,9 @@
                     <h4>Support</h4>
                     <ul>
                         <li><a href="{{ route('faq') }}">FAQ</a></li>
-                        <li><a href="#help">Help Center</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#safety">Safety</a></li>
+                        <li><a href="{{ route('about') }}#careers">Help Center</a></li>
+                        <li><a href="{{ route('about') }}#careers">Contact</a></li>
+                        <li><a href="{{ route('faq') }}#safety">Safety</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
